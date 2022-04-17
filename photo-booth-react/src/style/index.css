@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  overflow: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+  background-color: #313131;
+}
+
+.camera {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+canvas {
+  width: auto;
+  height: 100%;
+}
+
+.timer {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  font-size: 250px;
+  font-family: 'Fredoka One', sans-serif;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(-86deg, #cc00ff 5%, #ff862b 53%, #ffd500 91%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 20px transparent;
+  color: #eeeeee;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.timer.zoom {
+  animation: zoom 1s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: translateY(-50%) scale(1, 1);
+  }
+  20% {
+    transform: translateY(-25%) scale(2, 2);
+  }
+  to {
+    transform: translateY(-50%) scale(1, 1);
+  }
+}

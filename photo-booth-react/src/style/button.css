@@ -1,0 +1,44 @@
+button {
+    padding: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    transition: 500ms;
+}
+
+button:hover {
+    background-position: 100%;
+}
+
+.capture {
+    padding: 20px 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2a2a2a;
+    color: #828282;
+}
+
+.close {
+    padding: 15px 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    border-radius: 20px;
+    background: #FF3C3CFF;
+    color: #bfbfbf;
+}
+
+.download {
+    padding: 15px 20px;
+    position: absolute;
+    top: 80px;
+    right: 50%;
+    border-radius: 20px;
+    background: #2f2f2f;
+    color: #bfbfbf;
+}

@@ -1,0 +1,46 @@
+.flash {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    /*position:absolute;
+    z-index: 10;
+    transition: 1s ease-in;*/
+}
+
+.flash[on] {
+    animation: fade-in .5s forwards;
+}
+
+.flash[off] {
+    display: block;
+    pointer-events: none;
+    inset: 0;
+    animation: fade-out 1.2s forwards;
+}
+
+.flash.on {
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+.flash.off {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
